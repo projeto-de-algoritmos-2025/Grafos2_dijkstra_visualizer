@@ -1,8 +1,11 @@
 import streamlit as st
 from dijkstra_logic import dijkstra_gerar_passos
+from dijkstra_logic import dijkstra_gerar_passos
 from graph_drawing import desenhar_grafo
 from example_graphs import get_example
+from example_graphs import get_example
 
+# --- Inicialização do Estado da Aplicação ---
 # --- Inicialização do Estado da Aplicação ---
 if 'grafo' not in st.session_state:
     st.session_state.grafo = {}
@@ -10,7 +13,13 @@ if 'grafo' not in st.session_state:
     st.session_state.passo_atual = -1
     st.session_state.no_final = None
     st.session_state.proximo_no_id = 0
+    st.session_state.grafo = {}
+    st.session_state.posicoes_nos = {}
+    st.session_state.passo_atual = -1
+    st.session_state.no_final = None
+    st.session_state.proximo_no_id = 0
 
+# --- Interface do Usuário (UI) ---
 # --- Interface do Usuário (UI) ---
 st.set_page_config(layout="wide")
 st.title("Visualizador de Dijkstra para Grafos Direcionados")
@@ -112,6 +121,7 @@ with st.sidebar:
 # --- ÁREA PRINCIPAL DA APLICAÇÃO ---
 col1, col2 = st.columns([2, 1])
 with col1:
+    st.subheader("Visualização do Grafo")
     st.subheader("Visualização do Grafo")
     if st.session_state.grafo:
         estado_algoritmo = {}

@@ -51,9 +51,11 @@ def desenhar_grafo(grafo, posicoes_nos, estado_algoritmo, caminho_final):
         ax.scatter(x, y, s=600, c=cores_dos_nos, edgecolors='black', zorder=2)
         for no, pos in posicoes_nos.items():
             ax.text(pos[0], pos[1], str(no), ha='center', va='center', color='white', weight='bold', fontsize=12)
+            ax.text(pos[0], pos[1], str(no), ha='center', va='center', color='white', weight='bold', fontsize=12)
 
     patches = [mpatches.Patch(color=color, label=label) for label, color in cores.items()]
     ax.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc='upper left')
     ax.set_xticks([]); ax.set_yticks([]); plt.tight_layout()
+    
     
     return fig
