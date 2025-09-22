@@ -1,0 +1,48 @@
+# Arquivos de Cache e Byte-compiled do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ovos de distribuição (gerados pelo setuptools)
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Ambientes Virtuais
+# NUNCA envie seu ambiente virtual para o repositório
+venv/
+.venv/
+env/
+.env/
+env.bak/
+venv.bak/
+
+# Arquivos de configuração e segredos do Streamlit
+# MUITO IMPORTANTE para não expor chaves de API ou segredos
+.streamlit/
+secrets.toml
+
+# Arquivos de configuração de Editores e IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos gerados pelo Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+*.log
+*.log.*
+
+# Arquivos de ambiente (para variáveis de ambiente)
+.env
+.env.*
+!.env.example
+
+# Testes
+.pytest_cache/
+.coverage
+htmlcov/
