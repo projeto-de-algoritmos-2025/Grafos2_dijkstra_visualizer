@@ -37,6 +37,7 @@ O sistema foi desenvolvido para ensinar, de forma interativa e visual, o funcion
 ## Instalação e Ferramentas
 - **Python 3.13**
 - **Streamlit** (interface gráfica)
+- **Heapq** (Criação da Heap)
 - **Matplotlib** (visualização do grafo)
 
 
@@ -64,7 +65,7 @@ Pode ser facilmente usado para ensinar de forma didática a execução em tempo 
 ## Apresentação 
 
 <div align="center">
-<a href="..."><img src="https://i.imgur.com/J2vWeI3p2h4.png" width="50%"></a>
+<a href="https://youtu.be/4P9XdXVWwNk"><img src="https://imgur.com/gallery/grafos-lyNSykK" width="50%"></a>
 </div>
 
 <font size="3"><p style="text-align: center">Autor: [Diogo Barboza](https://github.com/) e [Daniel Ferreira](https://github.com/).</p></font>
