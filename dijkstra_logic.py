@@ -1,10 +1,24 @@
 import heapq
 
 def dijkstra_gerar_passos(grafo, no_inicial):
+    """
+    Executa o algoritmo de Dijkstra e retorna uma lista com o estado em cada passo.
+    Recebe o grafo e o nó inicial como argumentos para ser uma função pura.
+    """
     passos = []
     distancias = {no: float('infinity') for no in grafo}
+    # Adiciona nós que podem ser destinos mas não fontes
+    for no_origem in grafo:
+        for no_destino in grafo[no_origem]:
+            if no_destino not in distancias:
+                distancias[no_destino] = float('infinity')
+
+    if no_inicial not in distancias:
+        return [] # Retorna vazio se o nó inicial não estiver no grafo
+
     distancias[no_inicial] = 0
-    predecessores = {no: None for no in grafo}
+    
+    predecessores = {no: None for no in distancias}
     visitados, fila_prioridade = set(), [(0, no_inicial)]
 
     while fila_prioridade:
