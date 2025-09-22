@@ -68,5 +68,7 @@ Pode ser facilmente usado para ensinar de forma didática a execução em tempo 
 <a href="https://youtu.be/4P9XdXVWwNk"><img src="https://i.imgur.com/6sgT9qo.png" width="50%"></a>
 </div>
 
+[![Assista no YouTube](https://img.shields.io/badge/YouTube-Video-red?logo=youtube)](https://youtu.be/4P9XdXVWwNk)
+
 <font size="3"><p style="text-align: center">Autor: [Diogo Barboza](https://github.com/) e [Daniel Ferreira](https://github.com/).</p></font>
 
